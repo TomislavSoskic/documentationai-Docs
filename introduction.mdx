@@ -1,0 +1,98 @@
+---
+title: Welcome to Tomislav Soskic Documentation
+description: An overview of Tomislav Soskic's documentation platform, designed for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Tomislav Soskic provides a centralized platform where you organize and manage all your project documentation. Create structured spaces for codebases, APIs, user guides, and more. Access powerful features like search, versioning, and collaboration to keep your docs always up-to-date and accessible.
+
+## Key Features
+
+Discover the core capabilities that make Tomislav Soskic ideal for documentation management.
+
+<Columns cols={3}>
+  <Card title="Project Organization" icon="folder" href="#organization">
+    Group docs into projects and folders. Use tags and categories for easy navigation.
+  </Card>
+  <Card title="MDX Support" icon="file-text" href="#mdx-support">
+    Write rich docs with MDX, including components, diagrams, and interactive examples.
+  </Card>
+  <Card title="Search & Collaboration" icon="search" href="#collaboration">
+    Full-text search across all docs. Invite team members for real-time edits.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running in minutes with these essential steps.
+
+<Steps>
+  <Step title="Create Your Space" icon="plus">
+    Sign up at `https://tomislavsoskic.com` and create your first documentation space.
+  </Step>
+  <Step title="Add Your First Project" icon="folder-plus">
+    Click "New Project" and name it, such as "My API Docs".
+  </Step>
+  <Step title="Upload or Create Docs" icon="upload">
+    Drag and drop MDX files or use the editor to start writing.
+  </Step>
+  <Step title="Publish and Share" icon="globe">
+    Hit publish to generate a live site. Share the URL with your team.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Start small: Create one project with a single `introduction.mdx` file to familiarize yourself with the editor.
+</Callout>
+
+## Write Your First Document
+
+Use MDX for rich content. Here's a multi-language example for embedding code snippets.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Fetch project data
+  const response = await fetch('https://api.example.com/projects');
+  const projects = await response.json();
+  console.log(projects);
+  ```
+  ```python
+  # Fetch project data
+  import requests
+  response = requests.get('https://api.example.com/projects')
+  projects = response.json()
+  print(projects)
+  ```
+</CodeGroup>
+
+## Navigation and Next Steps
+
+Explore key sections to dive deeper.
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
+    Detailed setup instructions and first project walkthrough.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and team access.
+  </Card>
+</Columns>
+
+<Tabs>
+  <Tab title="Solo Developer" icon="user">
+    Focus on personal projects with version history and previews.
+  </Tab>
+  <Tab title="Team Collaboration" icon="users">
+    Assign roles, review changes, and merge updates seamlessly.
+  </Tab>
+</Tabs>
+
+<ExpandableGroup>
+  <Expandable title="How do I customize themes?" default-open="true">
+    Edit your space settings to apply brand colors like `#3B82F6`.
+  </Expandable>
+  <Expandable title="Supported formats?">
+    MDX, Markdown, images, and embeds. Convert others via the importer.
+  </Expandable>
+</ExpandableGroup>

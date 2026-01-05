@@ -1,0 +1,135 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features in Tomislav Soskic's documentation platform.
+---
+
+## Recent Releases
+
+Stay informed about the latest enhancements to Tomislav Soskic. You receive automatic notifications for major releases, and this changelog details every change.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement", "bugfix"]}>
+
+## New Features
+
+- Added support for `<Video>` and `<Iframe>` components to embed rich media directly in your MDX pages.
+- Introduced `<Columns>` layouts with up to 5 columns for better visual organization of cards and content.
+- Enabled custom brand colors via frontmatter, like `#3B82F6` for your documentation theme.
+
+## Improvements
+
+- Enhanced Mermaid diagram rendering with safer parsing for complex flowcharts.
+- Optimized code block highlighting for nested JSX examples using 4-backtick fences.
+
+## Bug Fixes
+
+- Fixed parsing errors from unescaped `{` and `}` characters in prose text.
+- Resolved heading hierarchy issues preventing skipped levels like H2 to H4.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched `<Update>` component for structured changelog entries with tags like `feature` and `bugfix`.
+- Added `<ParamField>` and `<ResponseField>` for comprehensive API reference documentation.
+
+## Breaking Changes
+
+- Updated attribute syntax to require double quotes for all strings, e.g., `title="Text"`.
+- Mermaid diagrams now require strict code block syntax—no more `<Mermaid>` components.
+
+## Bug Fixes
+
+- Corrected self-closing tags for container components like `<Steps>` and `<Tabs>`.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core MDX parsing with full support for PascalCase components like `<Callout>`, `<Card>`, and `<Steps>`.
+- Integrated Lucide icons for all interactive elements, such as `icon="zap"`.
+- Built-in escaping for special characters: wrap `{variable}`, `<100ms`, and `>` in backticks.
+
+## Improvements
+
+- YAML frontmatter validation to prevent blank line parsing errors.
+
+</Update>
+
+## Upcoming Features
+
+Preview what's coming next to Tomislav Soskic. These enhancements focus on interactivity and customization.
+
+<Columns cols={2}>
+
+<Card title="AI Content Assistant" icon="sparkles" href="/docs/ai-assistant">
+
+Generate MDX boilerplate and suggest components automatically.
+
+</Card>
+
+<Card title="Real-time Collaboration" icon="users" href="/docs/collaboration">
+
+Edit documentation with your team simultaneously.
+
+</Card>
+
+<Card title="Advanced Analytics" icon="bar-chart-3" href="/docs/analytics">
+
+Track page views and component usage.
+
+</Card>
+
+<Card title="Custom Themes" icon="palette" href="/docs/themes">
+
+Full CSS customization beyond brand colors.
+
+</Card>
+
+</Columns>
+
+## How to Stay Updated
+
+Follow these steps to ensure you never miss a release.
+
+<Steps>
+
+<Step title="Subscribe to Notifications" icon="bell">
+
+Enable email alerts in your dashboard at `https://dashboard.example.com/settings/notifications`.
+
+</Step>
+
+<Step title="Check This Changelog" icon="book-open">
+
+Visit `/changelog` regularly or bookmark it for quick access.
+
+````bash
+# Pin the changelog in your navigation
+npm run docs:pin --page=changelog
+````
+
+</Step>
+
+<Step title="Join the Community" icon="users">
+
+Discuss features on GitHub: [Tomislav Soskic Repo](https://github.com/example/tomislav-soskic-docs).
+
+</Step>
+
+</Steps>
+
+<Callout kind="tip">
+
+Contribute changes by forking the repo and submitting pull requests. Tag them with `["improvement"]` for faster review.
+
+</Callout>
+
+| Version | Date       | Key Tags              |
+|---------|------------|-----------------------|
+| v1.2.0  | 2024-10-15 | feature, improvement |
+| v1.1.0  | 2024-09-20 | feature, breaking    |
+| v1.0.0  | 2024-08-10 | feature              |
